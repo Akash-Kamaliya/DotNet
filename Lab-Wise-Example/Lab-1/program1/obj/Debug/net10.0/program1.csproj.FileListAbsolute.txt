@@ -1,0 +1,14 @@
+X:\Akash\DotNet\program1\bin\Debug\net10.0\program1.exe
+X:\Akash\DotNet\program1\bin\Debug\net10.0\program1.deps.json
+X:\Akash\DotNet\program1\bin\Debug\net10.0\program1.runtimeconfig.json
+X:\Akash\DotNet\program1\bin\Debug\net10.0\program1.dll
+X:\Akash\DotNet\program1\bin\Debug\net10.0\program1.pdb
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.GeneratedMSBuildEditorConfig.editorconfig
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.AssemblyInfoInputs.cache
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.AssemblyInfo.cs
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.csproj.CoreCompileInputs.cache
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.dll
+X:\Akash\DotNet\program1\obj\Debug\net10.0\refint\program1.dll
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.pdb
+X:\Akash\DotNet\program1\obj\Debug\net10.0\program1.genruntimeconfig.cache
+X:\Akash\DotNet\program1\obj\Debug\net10.0\ref\program1.dll
