@@ -1,0 +1,15 @@
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\bin\Debug\net10.0\Lab-4.exe
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\bin\Debug\net10.0\Lab-4.deps.json
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\bin\Debug\net10.0\Lab-4.runtimeconfig.json
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\bin\Debug\net10.0\Lab-4.dll
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\bin\Debug\net10.0\Lab-4.pdb
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.GeneratedMSBuildEditorConfig.editorconfig
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.AssemblyInfoInputs.cache
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.AssemblyInfo.cs
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.csproj.CoreCompileInputs.cache
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.sourcelink.json
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.dll
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\refint\Lab-4.dll
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.pdb
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\Lab-4.genruntimeconfig.cache
+X:\Akash\DotNet\Lab-Wise-Example\Lab-4\obj\Debug\net10.0\ref\Lab-4.dll
