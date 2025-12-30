@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\deshboard\\deshboardview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\deshboard\\deshboardview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\staff\\staffview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\staff\\staffview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\staff\\staffeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\staff\\staffeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\staff\\stafflist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\staff\\stafflist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\staff\\staffdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\staff\\staffdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\staff\\staffadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\staff\\staffadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\department\\departmentadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\department\\departmentadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\department\\departmentdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\department\\departmentdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingvenue\\meetingvenueview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingvenue\\meetingvenueview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingvenue\\meetingvenuelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingvenue\\meetingvenuelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingvenue\\meetingvenueeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingvenue\\meetingvenueeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingvenue\\meetingvenueadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingvenue\\meetingvenueadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\department\\departmenteditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\department\\departmenteditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\department\\departmentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\department\\departmentview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\department\\departmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\department\\departmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingvenue\\meetingvenuedeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingvenue\\meetingvenuedeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingtype\\meetingtypeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingtype\\meetingtypeview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingtype\\meetingtypelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingtype\\meetingtypelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingtype\\meetingtypeeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingtype\\meetingtypeeditform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingtype\\meetingtypedeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingtype\\meetingtypedeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingtype\\meetingtypeadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingtype\\meetingtypeadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetingmember\\meetingmemberdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetingmember\\meetingmemberdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|x:\\akash\\dotnet\\acadamicproject\\mom_project\\views\\meetings\\meetingsdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BD0C085-B158-68CC-9B5D-7B2793C7599F}|MOM_Project.csproj|solutionrelative:views\\meetings\\meetingsdeleteform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DeshboardView.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Deshboard\\DeshboardView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Deshboard\\DeshboardView.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Deshboard\\DeshboardView.cshtml",
+              "RelativeToolTip": "Views\\Deshboard\\DeshboardView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:15:31.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:13:35.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaffView.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\StaffView.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffView.cshtml",
+              "RelativeToolTip": "Views\\Staff\\StaffView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:10:12.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StaffList.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\StaffList.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffList.cshtml",
+              "RelativeToolTip": "Views\\Staff\\StaffList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:10:10.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaffEditForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffEditForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\StaffEditForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffEditForm.cshtml",
+              "RelativeToolTip": "Views\\Staff\\StaffEditForm.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:09:42.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StaffDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\StaffDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\Staff\\StaffDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:09:12.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StaffAdd.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffAdd.cshtml",
+              "RelativeDocumentMoniker": "Views\\Staff\\StaffAdd.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Staff\\StaffAdd.cshtml",
+              "RelativeToolTip": "Views\\Staff\\StaffAdd.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:07:07.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DepartmentDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:06:12.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MeetingVenueView.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueView.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingVenue\\MeetingVenueView.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueView.cshtml",
+              "RelativeToolTip": "Views\\MeetingVenue\\MeetingVenueView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:04:19.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MeetingVenueList.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueList.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingVenue\\MeetingVenueList.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueList.cshtml",
+              "RelativeToolTip": "Views\\MeetingVenue\\MeetingVenueList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:04:18.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentAdd.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentAdd.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentAdd.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentAdd.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentAdd.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:46:22.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DepartmentEditForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentEditForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentEditForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentEditForm.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentEditForm.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:01:31.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DepartmentView.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentView.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentView.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentView.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:01:05.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MeetingVenueAdd.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueAdd.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingVenue\\MeetingVenueAdd.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueAdd.cshtml",
+              "RelativeToolTip": "Views\\MeetingVenue\\MeetingVenueAdd.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:52:28.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MeetingVenueEditForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueEditForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingVenue\\MeetingVenueEditForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueEditForm.cshtml",
+              "RelativeToolTip": "Views\\MeetingVenue\\MeetingVenueEditForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:57:09.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartmentList.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentList.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Department\\DepartmentList.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T17:01:03.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MeetingVenueDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingVenue\\MeetingVenueDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingVenue\\MeetingVenueDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\MeetingVenue\\MeetingVenueDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:52:55.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MeetingTypeView.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeView.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingType\\MeetingTypeView.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeView.cshtml",
+              "RelativeToolTip": "Views\\MeetingType\\MeetingTypeView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:50:13.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MeetingTypeList.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeList.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingType\\MeetingTypeList.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeList.cshtml",
+              "RelativeToolTip": "Views\\MeetingType\\MeetingTypeList.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:50:01.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MeetingTypeDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingType\\MeetingTypeDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\MeetingType\\MeetingTypeDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:49:38.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MeetingTypeEditForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeEditForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingType\\MeetingTypeEditForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeEditForm.cshtml",
+              "RelativeToolTip": "Views\\MeetingType\\MeetingTypeEditForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:46:18.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MeetingTypeAdd.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeAdd.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingType\\MeetingTypeAdd.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingType\\MeetingTypeAdd.cshtml",
+              "RelativeToolTip": "Views\\MeetingType\\MeetingTypeAdd.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:45:47.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MeetingMemberDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingMember\\MeetingMemberDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\MeetingMember\\MeetingMemberDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\MeetingMember\\MeetingMemberDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\MeetingMember\\MeetingMemberDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:45:33.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MeetingsDeleteForm.cshtml",
+              "DocumentMoniker": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Meetings\\MeetingsDeleteForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Meetings\\MeetingsDeleteForm.cshtml",
+              "ToolTip": "X:\\Akash\\DotNet\\AcadamicProject\\MOM_Project\\Views\\Meetings\\MeetingsDeleteForm.cshtml",
+              "RelativeToolTip": "Views\\Meetings\\MeetingsDeleteForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-30T16:45:26.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

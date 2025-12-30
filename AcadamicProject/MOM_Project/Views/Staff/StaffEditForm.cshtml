@@ -1,0 +1,41 @@
+﻿<h2 class="h2 fw-bold">Edit Staff</h2>
+
+<div class="card shadow rounded-4 overflow-hidden">
+    <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
+        <div class="h5">Edit Staff</div>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Staff Id</label>
+                <input class="form-control mb-2" value="3" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Staff Name</label>
+                <input class="form-control mb-2" value="Raju Patel" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Department ID</label>
+                <input class="form-control mb-2" value="1" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mobile No</label>
+                <input class="form-control mb-2" value="9876543210" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input class="form-control mb-2" value="raju@email.com" />
+            </div>
+   
+
+            <div class="text-end">
+                <a asp-action="StaffList" class="btn btn-secondary">Cancel</a>
+                <button class="btn btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

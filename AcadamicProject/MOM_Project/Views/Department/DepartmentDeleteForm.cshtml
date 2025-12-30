@@ -1,0 +1,28 @@
+﻿<div class="container pb-3">
+    <h2 class="h2 fw-bold text-danger">Delete Department</h2>
+</div>
+
+<div class="card shadow rounded-4 border-danger overflow-hidden">
+    <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
+        <div class="h5">Delete Department</div>
+    </div>
+    <div class="card-body">
+
+        <p class="fs-5">
+            Are you sure you want to delete the following department?
+        </p>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item"><b>ID:</b> 5</li>
+            <li class="list-group-item"><b>Name:</b> IT Department</li>
+        </ul>
+
+        <div class="d-flex justify-content-end gap-2">
+            <a asp-action="DepartmentList" class="btn btn-secondary">Cancel</a>
+            <button class="btn btn-danger">
+                <i class="bi bi-trash"></i> Delete
+            </button>
+        </div>
+
+    </div>
+</div>

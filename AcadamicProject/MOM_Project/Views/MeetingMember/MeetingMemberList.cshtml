@@ -1,0 +1,42 @@
+﻿<div class="container pb-3">
+    <h2 class="h2 fw-bold">Meeting Members</h2>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-primary" asp-action="MeetingMemberAdd">
+            <i class="bi bi-plus"></i> Add Member
+        </a>
+    </div>
+</div>
+
+<div class="shadow rounded-4 overflow-hidden">
+    <div class="table-head px-3 py-2 bg-primary text-white">
+        <div class="h5">Meeting Members Table</div>
+    </div>
+
+    <table class="table mb-0">
+        <thead>
+            <tr>
+                <th>MeetingMemberID</th>
+                <th>MeetingID</th>
+                <th>StaffID</th>
+                <th>IsPresent</th>
+                <th>Created</th>
+                <th colspan="3">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 1; i <= 10; i++)
+            {
+                <tr>
+                    <th>@i</th>
+                    <td>1</td>
+                    <td>@i</td>
+                    <td><span class="badge bg-info">Yes</span></td>
+                    <td>09-11-2001</td>
+                    <td><a asp-action="MeetingMemberView"><i class="bi bi-eye"></i></a></td>
+                    <td><a asp-action="MeetingMemberEditForm"><i class="bi bi-pen"></i></a></td>
+                    <td><a asp-action="MeetingMemberDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

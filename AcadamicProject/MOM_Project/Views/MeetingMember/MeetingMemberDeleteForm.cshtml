@@ -1,0 +1,25 @@
+﻿<div class="container pb-3">
+    <h2 class="h2 fw-bold text-danger">Delete Meeting Member</h2>
+</div>
+
+<div class="card shadow rounded-4 border-danger overflow-hidden">
+    <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
+        <div class="h5">Delete Meeting Member</div>
+    </div>
+    <div class="card-body">
+
+        <p>Are you sure you want to remove this member from the meeting?</p>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item"><b>Meeting ID:</b> 5</li>
+            <li class="list-group-item"><b>Staff ID:</b> 3</li>
+            <li class="list-group-item"><b>Status:</b> Present</li>
+        </ul>
+
+        <div class="text-end">
+            <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
+            <button class="btn btn-danger">Delete</button>
+        </div>
+
+    </div>
+</div>
