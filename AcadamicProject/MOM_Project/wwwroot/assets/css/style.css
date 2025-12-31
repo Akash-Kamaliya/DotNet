@@ -377,16 +377,16 @@ h6 {
 }
 
 .header {
-  transition: all 0.5s;
-  z-index: 997;
-  height: 60px;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background: #0042D1;
-  background: linear-gradient(90deg, rgba(0, 66, 209, 1) 0%, rgba(0, 66, 209, 1) 44%, rgba(0, 0, 0, 1) 100%);
-  color: white;
-  padding-left: 20px;
-  /* Toggle Sidebar Button */
-  /* Search Bar */
+    transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background: #0042D1;
+    background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 1) 44%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    padding-left: 20px;
+    /* Toggle Sidebar Button */
+    /* Search Bar */
 }
 
 .header .toggle-sidebar-btn {
@@ -600,20 +600,20 @@ h6 {
 # Sidebar
 --------------------------------------------------------------*/
 .sidebar {
-  position: fixed;
-  top: 60px;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 996;
-  transition: all 0.3s;
-  padding: 20px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #aab7cf transparent;
-  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background: #0073ff;
-  background: linear-gradient(180deg, rgba(0, 115, 255, 1) 0%, rgba(0, 66, 209, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background: #0073ff;    
+    background: linear-gradient(180deg,rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 @media (max-width: 1199px) {

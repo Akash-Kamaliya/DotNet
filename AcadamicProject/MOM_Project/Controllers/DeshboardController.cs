@@ -6,8 +6,10 @@ namespace MOM_Project.Controllers
 {
     public class DeshboardController : Controller
     {
-        public IActionResult DeshboardView()
+        
+        public IActionResult DeshboardView(DeshboardModel dm)
         {
+            ViewBag.vdm = dm.DemoData;
             return View();
         }
 
