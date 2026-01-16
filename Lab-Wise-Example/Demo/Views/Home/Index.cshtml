@@ -1,8 +1,84 @@
-﻿@{
-    Layout = null;
+﻿@* @{
+    // Layout = null;
 }
 
-@for(int i = 1;i <= 10; i++)
-{
-    <h1>5 * @(i) = @(5*i)</h1>
-}
+@{
+    var Students = new[]{
+        new {
+            name = "Akash",
+            details = new[]
+            {
+                    new{sem = 1 , spi = 9.1 }
+            }
+        },
+        new {
+            name = "Sky",
+            details = new[]
+            {
+                    new{sem = 1 , spi = 5.1 }
+            }
+        }
+    };
+} *@
+
+@* @foreach(var student in Students){
+    <h1>Name : @(student.name)</h1>
+    @foreach(var detail in student.details)
+    {
+        <h2>Sem : @detail.sem</h2>
+        <h2>Spi : @detail.spi</h2>
+    }
+} *@
+@* <table class="table">
+    <thead>
+        <tr>
+
+            <th scope="col">Name</th>
+            <th scope="col">Semester</th>
+            <th scope="col">Spi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Students)
+        {
+            <tr>
+                <td>@student.name</td>
+                @foreach (var detail in student.details)
+                {
+                    <td>@detail.sem</td>
+                    <td>@detail.spi</td>
+                }
+            </tr>
+        }
+
+    </tbody>
+</table> *@
+
+<h1>@ViewData["message"]</h1>
+<h1>@ViewBag.name</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+
+            <th scope="col">Name</th>
+            <th scope="col">Semester</th>
+            <th scope="col">Spi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in @ViewBag.student)
+        {
+            <tr>
+                <td>@student.name</td>
+                @foreach (var detail in student.details)
+                {
+                    <td>@detail.sem</td>
+                    <td>@detail.spi</td>
+                }
+            </tr>
+        }
+
+    </tbody>
+</table>

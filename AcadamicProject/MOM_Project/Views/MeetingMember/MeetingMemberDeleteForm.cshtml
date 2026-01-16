@@ -8,17 +8,15 @@
     </div>
     <div class="card-body">
 
-        <p>Are you sure you want to remove this member from the meeting?</p>
-
-        <ul class="list-group mb-3">
+        <ul class="list-group mb-3 p-1">
             <li class="list-group-item"><b>Meeting ID:</b> 5</li>
             <li class="list-group-item"><b>Staff ID:</b> 3</li>
             <li class="list-group-item"><b>Status:</b> Present</li>
         </ul>
 
-        <div class="text-end">
-            <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
+        <div class="text-start p-1">
             <button class="btn btn-danger">Delete</button>
+            <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
         </div>
 
     </div>

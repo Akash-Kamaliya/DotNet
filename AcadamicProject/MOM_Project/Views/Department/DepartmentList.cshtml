@@ -1,82 +1,53 @@
-﻿<div class="container pb-3">
+﻿@{
+    var departments = new List<string>
+    {
+        "CSE",
+        "Honers",
+        "Civil",
+        "Mechanical"
+    };
+}
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Department</h2>
     <div class="d-flex justify-content-end">
-        <a class="btn btn-primary" asp-action="DepartmentAdd"><i class="bi bi-plus"></i>Add Department</a>
+        <a class="btn btn-primary" asp-action="DepartmentAdd">
+            <i class="bi bi-plus"></i> Add Department
+        </a>
     </div>
 </div>
 
-
-
 <div class="shadow rounded-4 overflow-hidden">
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
-        <div class="h5">Department List</div>
+        <div class="h5 mb-0">Department List</div>
     </div>
-    <table class="table main-table rounded">
+
+    <table class="table main-table mb-0">
         <thead>
             <tr>
-                <th scope="col">DepartmentID</th>
-                <th scope="col">DepartmentName</th>
-                <th scope="col">Created</th>
-                <th scope="col">Modified</th>
-                <th scope="col" colspan="3">Action</th>
+                <th>Department Name</th>
+                <th class="text-center">Action</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>John</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Sky</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Akash</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Raju</td>
-                <td>09-11-2001</td>
-                <td>09-11-2001</td>
-                <td><a asp-action="DepartmentView"><i class="bi bi-eye"></i></a></td>
-                <td><a asp-action="DepartmentEditForm"><i class="bi bi-pen"></i></a></td>
-                <td><a asp-action="DepartmentDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
-            </tr>
+            @foreach (var dept in departments)
+            {
+                <tr>
+                    <td>@dept</td>
+                    <td class="text-center">
+                        <div class="action-icons">
+                            <a asp-action="DepartmentView" title="View">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a asp-action="DepartmentEditForm" title="Edit">
+                                <i class="bi bi-pen"></i>
+                            </a>
+                            <a asp-action="DepartmentDeleteForm" title="Delete">
+                                <i class="bi bi-trash text-danger"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

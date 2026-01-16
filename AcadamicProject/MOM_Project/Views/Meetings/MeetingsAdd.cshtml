@@ -4,29 +4,43 @@
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
         <div class="h5">Schedule Meeting</div>
     </div>
+
     <div class="card-body">
         <form>
-            <div class="mb-3">
-                <label class="form-label">MeetingDate</label>
-                <input type="datetime-local" class="form-control mb-3" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Meeting Type ID</label>
-                <input class="form-control mb-3" placeholder="Meeting Type ID" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Venue ID</label>
-                <input class="form-control mb-3" placeholder="Venue ID" />
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Department ID</label>
-                <input class="form-control mb-3" placeholder="Department ID" />
-            </div>  
 
-            <div class="text-end">
-                <a asp-action="MeetingsList" class="btn btn-secondary">Cancel</a>
-                <button class="btn btn-primary">Save</button>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Meeting Date & Time</label>
+                    <input type="datetime-local" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Meeting Type ID</label>
+                    <input class="form-control" placeholder="Meeting Type ID" />
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Venue ID</label>
+                    <input class="form-control" placeholder="Venue ID" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Department ID</label>
+                    <input class="form-control" placeholder="Department ID" />
+                </div>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                    <i class="bi bi-save"></i> Save
+                </button>
+                <a asp-action="MeetingsList" class="btn btn-secondary">
+                    Cancel
+                </a>
+            </div>
+
         </form>
     </div>
 </div>

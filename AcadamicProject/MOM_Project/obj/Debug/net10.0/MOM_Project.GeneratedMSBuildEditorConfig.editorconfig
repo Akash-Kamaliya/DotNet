@@ -11,157 +11,157 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MOM_Project
 build_property.RootNamespace = MOM_Project
-build_property.ProjectDir = X:\Akash\DotNet\AcadamicProject\MOM_Project\
+build_property.ProjectDir = x:\Akash\DotNet\AcadamicProject\MOM_Project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = X:\Akash\DotNet\AcadamicProject\MOM_Project
+build_property.MSBuildProjectDirectory = x:\Akash\DotNet\AcadamicProject\MOM_Project
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Dashboard/DashboardView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50QWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50RGVsZXRlRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50RWRpdEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Department/DepartmentView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXBhcnRtZW50Vmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Deshboard/DeshboardView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzaGJvYXJkXERlc2hib2FyZFZpZXcuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ01lbWJlclxNZWV0aW5nTWVtYmVyQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ01lbWJlclxNZWV0aW5nTWVtYmVyRGVsZXRlRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ01lbWJlclxNZWV0aW5nTWVtYmVyRWRpdEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ01lbWJlclxNZWV0aW5nTWVtYmVyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingMember/MeetingMemberView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ01lbWJlclxNZWV0aW5nTWVtYmVyVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcTWVldGluZ3NBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcTWVldGluZ3NEZWxldGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcTWVldGluZ3NFZGl0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcTWVldGluZ3NMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Meetings/MeetingsView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ3NcTWVldGluZ3NWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1R5cGVcTWVldGluZ1R5cGVBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1R5cGVcTWVldGluZ1R5cGVEZWxldGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1R5cGVcTWVldGluZ1R5cGVFZGl0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1R5cGVcTWVldGluZ1R5cGVMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingType/MeetingTypeView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1R5cGVcTWVldGluZ1R5cGVWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1ZlbnVlXE1lZXRpbmdWZW51ZUFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1ZlbnVlXE1lZXRpbmdWZW51ZURlbGV0ZUZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1ZlbnVlXE1lZXRpbmdWZW51ZUVkaXRGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1ZlbnVlXE1lZXRpbmdWZW51ZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/MeetingVenue/MeetingVenueView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVldGluZ1ZlbnVlXE1lZXRpbmdWZW51ZVZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/Error.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffAdd.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffDeleteForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffDeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZEZWxldGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffEditForm.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffEditForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZFZGl0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffList.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffView.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Staff/StaffView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhZmZWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/_ViewImports.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/_ViewStart.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[X:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/_Layout.cshtml]
+[x:/Akash/DotNet/AcadamicProject/MOM_Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-3a7l35h924

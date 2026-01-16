@@ -1,4 +1,15 @@
-﻿<div class="container pb-3">
+﻿@{
+    var staffList = new[]
+    {
+        new { StaffName = "Mark Johnson", DepartmentName = "HR" },
+        new { StaffName = "Jacob Smith", DepartmentName = "IT" },
+        new { StaffName = "John Williams", DepartmentName = "Finance" },
+        new { StaffName = "Akash Kamaliya", DepartmentName = "CSE" },
+        new { StaffName = "Raju Patel", DepartmentName = "Admin" }
+    };
+}
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Staff</h2>
     <div class="d-flex justify-content-end">
         <a class="btn btn-primary" asp-action="StaffAdd">
@@ -8,35 +19,31 @@
 </div>
 
 <div class="shadow rounded-4 overflow-hidden">
-    <div class="table-head px-3 py-2 bg-primary text-white">
-        <div class="h5">Staff Table</div>
+    <div class="bg-primary text-white px-3 py-2 h5 mb-0">
+        Staff List
     </div>
 
     <table class="table mb-0">
         <thead>
             <tr>
-                <th>StaffID</th>
-                <th>StaffName</th>
-                <th>DepartmentID</th>
-                <th>MobileNo</th>
-                <th>EmailAddress</th>
-                <th>Created</th>
-                <th colspan="3">Action</th>
+                <th>Staff Name</th>
+                <th>Department</th>
+                <th class="text-center">Action</th>
             </tr>
         </thead>
         <tbody>
-            @for (int i = 1; i <= 10; i++)
+            @foreach (var staff in staffList)
             {
                 <tr>
-                    <th>@i</th>
-                    <td>Staff Member @i</td>
-                    <td>@(i % 3 + 1)</td>
-                    <td>99999999@i</td>
-                    <td>staff@i@email.com</td>
-                    <td>09-11-2001</td>
-                    <td><a asp-action="StaffView"><i class="bi bi-eye"></i></a></td>
-                    <td><a asp-action="StaffEditForm"><i class="bi bi-pen"></i></a></td>
-                    <td><a asp-action="StaffDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
+                    <td>@staff.StaffName</td>
+                    <td>@staff.DepartmentName</td>
+                    <td class="text-center">
+                        <div class="action-icons">
+                            <a asp-action="StaffView"><i class="bi bi-eye"></i></a>
+                            <a asp-action="StaffEditForm"><i class="bi bi-pen"></i></a>
+                            <a asp-action="StaffDeleteForm"><i class="bi bi-trash text-danger"></i></a>
+                        </div>
+                    </td>
                 </tr>
             }
         </tbody>

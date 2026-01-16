@@ -23,7 +23,7 @@ namespace Demo
             app.MapStaticAssets();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=p2}/{id?}")
+                pattern: "{controller=Home}/{action=index}/{id?}")
                 .WithStaticAssets();
 
             app.Run();

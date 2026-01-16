@@ -8,10 +8,24 @@ namespace Demo.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            ViewData["message"] = "Data Fetch Succesfully !!";
+            ViewBag.name = "Akash";
+            ViewBag.student = new[]{
+            new {
+            name = "Akash",
+            details = new[]
+            {
+                    new{sem = 1 , spi = 9.1 }
+            }
+        },
+        new {
+            name = "Sky",
+            details = new[]
+            {
+                    new{sem = 1 , spi = 5.1 }
+            }
         }
-        public IActionResult p2()
-        {
+    };
             return View();
         }
     }

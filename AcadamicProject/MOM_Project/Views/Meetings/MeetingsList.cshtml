@@ -1,42 +1,63 @@
-﻿<div class="container pb-3">
+﻿@{
+    ViewData["Title"] = "Meeting List";
+    var meetings = new[]
+    {
+        new {
+            MeetingTitle = "Planning Meeting",
+            MeetingTypeName = "Planning",
+            MeetingVenueName = "Auditorium 9",
+            DepartmentName = "CSE"
+        },
+        new {
+            MeetingTitle = "Review Meeting",
+            MeetingTypeName = "Review",
+            MeetingVenueName = "Auditorium 10",
+            DepartmentName = "IT"
+        }
+    };
+}
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Meetings</h2>
     <div class="d-flex justify-content-end">
         <a class="btn btn-primary" asp-action="MeetingsAdd">
-            <i class="bi bi-plus"></i> Schedule Meeting
+            <i class="bi bi-plus"></i> Add Meeting
         </a>
     </div>
 </div>
 
 <div class="shadow rounded-4 overflow-hidden">
-    <div class="table-head px-3 py-2 bg-primary text-white">
-        <div class="h5">Meetings Table</div>
+    <div class="bg-primary text-white px-3 py-2 h5 mb-0">
+        Meeting List
     </div>
 
     <table class="table mb-0">
         <thead>
             <tr>
-                <th>MeetingID</th>
-                <th>MeetingDate</th>
-                <th>MeetingTypeID</th>
-                <th>VenueID</th>
-                <th>DepartmentID</th>
-                <th>Status</th>
-                <th colspan="3">Action</th>
+                <th>Meeting</th>
+                <th>Type</th>
+                <th>Venue</th>
+                <th>Department</th>
+                <th class="text-center">Action</th>
             </tr>
         </thead>
         <tbody>
-            @for (int i = 1; i <= 10; i++)
+            @foreach (var m in meetings)
             {
                 <tr>
-                    <th>@i</th>
-                    <td>15-12-2025</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td><span class="badge bg-success">Scheduled</span></td>
-                    <td><a asp-action="MeetingsView"><i class="bi bi-eye"></i></a></td>
-                    <td><a asp-action="MeetingsEditForm"><i class="bi bi-pen"></i></a></td>
-                    <td><a asp-action="MeetingsDeleteForm"><i class="bi bi-trash text-danger"></i></a></td>
+                    <td>@m.MeetingTitle</td>
+                    <td>@m.MeetingTypeName</td>
+                    <td>@m.MeetingVenueName</td>
+                    <td>@m.DepartmentName</td>
+                    <td class="text-center">
+                        <div class="action-icons">
+                            <a asp-action="MeetingsView"><i class="bi bi-eye"></i></a>
+                            <a asp-action="MeetingsEditForm"><i class="bi bi-pen"></i></a>
+                            <a asp-action="MeetingsDeleteForm"> 
+                                <i class="bi bi-trash text-danger"></i>
+                            </a>
+                        </div>
+                    </td>
                 </tr>
             }
         </tbody>

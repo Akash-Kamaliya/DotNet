@@ -4,45 +4,57 @@
 
 <div class="card shadow rounded-4 overflow-hidden">
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
-        <div class="h5">Edit Meeting Member</div>
+        <div class="h5 mb-0">Edit Meeting Member</div>
     </div>
+
     <div class="card-body">
 
-        <form method="post">
+        <form class="needs-validation" novalidate method="post">
 
-            <div class="mb-3">
-                <label class="form-label">Meeting Member ID</label>
-                <input type="text" class="form-control" value="7" readonly />
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Meeting Member ID</label>
+                    <input type="text" class="form-control is-valid" value="7" readonly>
+                    <div class="valid-feedback">Auto-generated</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Meeting ID</label>
+                    <input type="text" class="form-control is-invalid" value="5" required>
+                    <div class="invalid-feedback">Meeting ID is required.</div>
+                </div>
+
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Meeting ID</label>
-                <input type="text" class="form-control" value="5" />
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Staff ID</label>
+                    <input type="text" class="form-control is-invalid" value="3" required>
+                    <div class="invalid-feedback">Staff ID is required.</div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Attendance</label>
+                    <select class="form-select is-valid" required>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                    <div class="valid-feedback">Status selected</div>
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label">Remarks</label>
+                    <textarea class="form-control is-valid" rows="3" required>Attended full meeting</textarea>
+                    <div class="valid-feedback">Looks good</div>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Staff ID</label>
-                <input type="text" class="form-control" value="3" />
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Attendance</label>
-                <select class="form-select">
-                    <option selected>Present</option>
-                    <option>Absent</option>
-                </select>
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Remarks</label>
-                <textarea class="form-control" rows="3">Attended full meeting</textarea>
-            </div>
-
-            <div class="d-flex justify-content-end gap-2">
-                <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
+            <div class="d-flex gap-2">
                 <button type="submit" class="btn btn-primary">
                     <i class="bi bi-pencil"></i> Update
                 </button>
+                <a asp-action="MeetingMemberList" class="btn btn-secondary">
+                    Cancel
+                </a>
             </div>
 
         </form>

@@ -4,38 +4,50 @@
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
         <div class="h5">Edit Staff</div>
     </div>
+
     <div class="card-body">
         <form>
-            <div class="mb-3">
-                <label class="form-label">Staff Id</label>
-                <input class="form-control mb-2" value="3" readonly />
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Staff ID</label>
+                    <input class="form-control" value="3" readonly />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Staff Name</label>
+                    <input class="form-control" value="Raju Patel" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Staff Name</label>
-                <input class="form-control mb-2" value="Raju Patel" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Department ID</label>
+                    <input class="form-control" value="1" />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Mobile No</label>
+                    <input class="form-control" value="9876543210" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Department ID</label>
-                <input class="form-control mb-2" value="1" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Email Address</label>
+                    <input class="form-control" value="raju@email.com" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Mobile No</label>
-                <input class="form-control mb-2" value="9876543210" />
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                    <i class="bi bi-pencil"></i> Update
+                </button>
+                <a asp-action="StaffList" class="btn btn-secondary">
+                    Cancel
+                </a>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Email Address</label>
-                <input class="form-control mb-2" value="raju@email.com" />
-            </div>
-   
-
-            <div class="text-end">
-                <a asp-action="StaffList" class="btn btn-secondary">Cancel</a>
-                <button class="btn btn-primary">Update</button>
-            </div>
         </form>
     </div>
 </div>

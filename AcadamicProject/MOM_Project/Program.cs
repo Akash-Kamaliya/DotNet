@@ -23,7 +23,7 @@ namespace MOM_Project
             app.MapStaticAssets();
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Deshboard}/{action=DeshboardView}/{id?}")
+                pattern: "{controller=Dashboard}/{action=DashboardView}/{id?}")
                 .WithStaticAssets();
 
             app.Run();

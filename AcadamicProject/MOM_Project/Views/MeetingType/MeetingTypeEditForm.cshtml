@@ -4,29 +4,38 @@
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
         <div class="h5">Edit Meeting Type</div>
     </div>
+
     <div class="card-body">
         <form>
 
-            <div class="mb-3">
-                <label class="form-label">Meeting Type Id</label>
-                <input class="form-control mb-3" value="1" readonly />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Meeting Type ID</label>
+                    <input class="form-control" value="1" readonly />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Meeting Type Name</label>
+                    <input class="form-control" value="Review Meeting" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Meeting Type Name</label>
-                <input class="form-control mb-3" value="Review Meeting" />
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Remark</label>
+                    <input class="form-control" value="General Discussion" />
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label">Remark</label>
-                <input class="form-control mb-3" value="General Discussion" />
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary">
+                    <i class="bi bi-pencil"></i> Update
+                </button>
+                <a asp-action="MeetingTypeList" class="btn btn-secondary">
+                    Cancel
+                </a>
             </div>
-            
 
-            <div class="text-end">
-                <a asp-action="MeetingTypeList" class="btn btn-secondary">Cancel</a>
-                <button class="btn btn-primary">Update</button>
-            </div>
         </form>
     </div>
 </div>

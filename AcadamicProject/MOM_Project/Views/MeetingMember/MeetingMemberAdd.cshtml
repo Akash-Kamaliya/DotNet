@@ -2,29 +2,53 @@
 
 <div class="card shadow rounded-4 overflow-hidden">
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
-        <div class="h5">Add Meeting Member</div>    
+        <div class="h5 mb-0">Add Meeting Member</div>
     </div>
+
     <div class="card-body">
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Meeting Id</label>
-                <input class="form-control mb-3" placeholder="Meeting ID" />
+
+        <form class="needs-validation" novalidate>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Meeting ID</label>
+                    <input class="form-control is-invalid" placeholder="Meeting ID" required>
+                    <div class="invalid-feedback">Meeting ID is required.</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Staff ID</label>
+                    <input class="form-control is-invalid" placeholder="Staff ID" required>
+                    <div class="invalid-feedback">Staff ID is required.</div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Staff Id</label>
-                <input class="form-control mb-3" placeholder="Staff ID" />
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <label class="form-label d-block">Staff Status</label>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input is-valid" type="radio" name="StaffStatus" checked>
+                        <label class="form-check-label">Present</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input is-valid" type="radio" name="StaffStatus">
+                        <label class="form-check-label">Absent</label>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Staff Status</label>
-                <select class="form-control mb-3">
-                    <option>Present</option>
-                    <option>Absent</option>
-                </select>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">
+                    Save
+                </button>
+                <a asp-action="MeetingMemberList" class="btn btn-secondary">
+                    Cancel
+                </a>
             </div>
-            <div class="text-end">
-                <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
-                <button class="btn btn-primary">Save</button>
-            </div>
+
         </form>
+
     </div>
 </div>

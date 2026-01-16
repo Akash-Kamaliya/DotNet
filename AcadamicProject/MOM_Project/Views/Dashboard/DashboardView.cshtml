@@ -1,0 +1,159 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="section dashboard">
+
+    <h1 class="h1 fw-bold">Dashboard</h1>
+
+
+    <!-- ======= Stat Cards ======= -->
+    <div class="row">
+
+        <!-- Total Meetings -->
+        <div class="col-xxl-3 col-md-6">
+            <div class="card info-card sales-card">
+                <div class="card-body">
+                    <h5 class="card-title">Meetings <span>| Total</span></h5>
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>28</h6>
+                            <span class="text-success small pt-1 fw-bold">+12%</span>
+                            <span class="text-muted small pt-2 ps-1">this month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments -->
+        <div class="col-xxl-3 col-md-6">
+            <div class="card info-card revenue-card">
+                <div class="card-body">
+                    <h5 class="card-title">Departments</h5>
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>6</h6>
+                            <span class="text-muted small pt-2">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff -->
+        <div class="col-xxl-3 col-md-6">
+            <div class="card info-card customers-card">
+                <div class="card-body">
+                    <h5 class="card-title">Staff Members</h5>
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>42</h6>
+                            <span class="text-muted small pt-2">Registered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meeting Members -->
+        <div class="col-xxl-3 col-md-6">
+            <div class="card info-card customers-card">
+                <div class="card-body">
+                    <h5 class="card-title">Meeting Members</h5>
+                    <div class="d-flex align-items-center">
+                        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h6>65</h6>
+                            <span class="text-muted small pt-2">Participants</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======= Content Row ======= -->
+    <div class="row">
+
+        <!-- Recent Meetings -->
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Meetings</h5>
+
+                    <table class="table table-hover align-middle">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Project Planning</td>
+                                <td>Internal</td>
+                                <td>10 Jan 2026</td>
+                                <td><span class="badge bg-success">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Semester Review</td>
+                                <td>Academic</td>
+                                <td>15 Jan 2026</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Staff Coordination</td>
+                                <td>Administrative</td>
+                                <td>18 Jan 2026</td>
+                                <td><span class="badge bg-info">Scheduled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Meetings -->
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Meetings</h5>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Faculty Discussion</strong><br>
+                            <small class="text-muted">20 Jan 2026 • 10:00 AM</small>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Placement Review</strong><br>
+                            <small class="text-muted">22 Jan 2026 • 02:30 PM</small>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Annual Strategy</strong><br>
+                            <small class="text-muted">25 Jan 2026 • 11:00 AM</small>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
