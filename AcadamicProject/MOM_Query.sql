@@ -155,7 +155,7 @@ BEGIN
 END
 ------------------------------------------------
 
-------------MOM_Department – Stored Procedures
+------------MOM_Department ï¿½ Stored Procedures
 
 CREATE OR ALTER PROCEDURE PR_MOM_Department_SelectAll
 AS

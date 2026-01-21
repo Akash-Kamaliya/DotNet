@@ -1,15 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MOM_Project.Models;
 
 namespace MOM_Project.Controllers
 {
     public class DepartmentController : Controller
     {
-        public IActionResult DepartmentList()
+        public IActionResult DepartmentAdd()
         {
             return View();
         }
 
-        public IActionResult DepartmentView()
+        [HttpPost]
+        public IActionResult DepartmentAdd(DepartmentModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("DepartmentList");
+            }
+
+            return View(model);
+        }
+
+        public IActionResult DepartmentEditForm(int id)
+        {
+            DepartmentModel model = new DepartmentModel()
+            {
+                DepartmentID = id,
+                DepartmentName = "IT Department",
+                Modified = DateTime.Now
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult DepartmentEditForm(DepartmentModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("DepartmentList");
+            }
+
+            return View(model);
+        }
+
+        public IActionResult DepartmentList()
         {
             return View();
         }
@@ -19,12 +54,7 @@ namespace MOM_Project.Controllers
             return View();
         }
 
-        public IActionResult DepartmentAdd()
-        {
-            return View();
-        }
-
-        public IActionResult DepartmentEditForm()
+        public IActionResult DepartmentView()
         {
             return View();
         }

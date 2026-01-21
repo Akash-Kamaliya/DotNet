@@ -1,37 +1,37 @@
-﻿<div class="container pb-3">
+﻿@model DepartmentModel
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Edit Department</h2>
 </div>
 
 <div class="card shadow rounded-4 overflow-hidden">
-    <div class="table-head d-flex align-items-center px-3 py-2 bg-p rimary text-white">
+    <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
         <div class="h5 mb-0">Department Edit Form</div>
     </div>
 
     <div class="card-body">
 
-        <form class="needs-validation" novalidate method="post">
+        <form asp-action="DepartmentEditForm" method="post">
+
+            <input type="hidden" asp-for="DepartmentID" />
 
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label class="form-label">Department ID</label>
-                    <input type="text" class="form-control is-valid" value="3" readonly>
-                    <div class="valid-feedback">Auto-generated</div>
+                    <input asp-for="DepartmentID" class="form-control" readonly />
                 </div>
 
                 <div class="col-md-6">
                     <label class="form-label">Last Modified</label>
-                    <input type="text" class="form-control is-valid" value="09-11-2001" readonly>
-                    <div class="valid-feedback">Read only</div>
+                    <input asp-for="Modified" class="form-control" readonly />
                 </div>
             </div>
 
             <div class="row mb-4">
                 <div class="col-md-12">
-                    <label class="form-label">Department Name</label>
-                    <input type="text" class="form-control is-invalid" value="IT Department" required>
-                    <div class="invalid-feedback">
-                        Department name is required.
-                    </div>
+                    <label asp-for="DepartmentName" class="form-label"></label>
+                    <input asp-for="DepartmentName" class="form-control" />
+                    <span asp-validation-for="DepartmentName" class="text-danger"></span>
                 </div>
             </div>
 
@@ -45,6 +45,6 @@
             </div>
 
         </form>
-
     </div>
 </div>
+

@@ -1,4 +1,4 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Dashboard";
 }
 
@@ -156,4 +156,936 @@
 
     </div>
 
-</section>
+</section> *@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Section - Data Table</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-bg: #f0f9ff;
+            --primary-dark: #0369a1;
+            --blue-50: #f0f9ff;
+            --blue-200: #bfdbfe;
+            --blue-300: #93c5fd;
+            --blue-400: #60a5fa;
+            --blue-500: #3b82f6;
+            --blue-700: #1d4ed8;
+            --red-400: #f87171;
+            --red-50: #fef2f2;
+            --red-600: #dc2626;
+            --gray-900: #111827;
+            --gray-600: #4b5563;
+            --gray-200: #e5e7eb;
+            --white: #ffffff;
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 200ms ease;
+        }
+
+        body {
+            font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--gray-900);
+            background: linear-gradient(to bottom right, #f0f9ff, #ffffff, #f0f9ff);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .max-w-7xl {
+            max-width: 80rem;
+        }
+
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Typography */
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .text-gray-900 {
+            color: var(--gray-900);
+        }
+
+        .text-gray-600 {
+            color: var(--gray-600);
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        /* Card Container */
+        .card-container {
+            border: 0;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-xl);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        /* Search Wrapper */
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            max-width: 28rem;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            color: var(--gray-600);
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.625rem 1rem 0.625rem 2.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            background-color: rgba(0, 0, 0, 0.02);
+            font-size: 1rem;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+
+            .search-input:hover {
+                border-color: rgba(0, 0, 0, 0.15);
+            }
+
+            .search-input:focus {
+                outline: none;
+                border-color: var(--blue-400);
+                background-color: var(--white);
+                box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+            }
+
+        /* Add Member Button */
+        .add-member-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
+            border-radius: 9999px;
+            background: linear-gradient(to right, var(--blue-400), var(--blue-500));
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: none;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+            .add-member-btn:hover {
+                box-shadow: var(--shadow-xl);
+                transform: scale(1.05);
+            }
+
+            .add-member-btn:active {
+                transform: scale(0.95);
+            }
+
+            .add-member-btn svg {
+                width: 1rem;
+                height: 1rem;
+            }
+
+        /* Table Wrapper */
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-header-row {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+            .table-header-row th {
+                padding: 1rem;
+                text-align: left;
+                font-weight: 600;
+                color: var(--gray-900);
+                background-color: transparent;
+            }
+
+        .data-table tbody tr {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+            .data-table tbody tr:hover {
+                background-color: rgba(96, 165, 250, 0.05);
+            }
+
+        .data-table td {
+            padding: 1rem;
+            color: var(--gray-900);
+        }
+
+            .data-table td.muted {
+                color: var(--gray-600);
+            }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+
+        /* Edit Button - Glassmorphic Blue Gradient */
+        .edit-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, var(--blue-200), var(--blue-300));
+            border: 1px solid rgba(96, 165, 250, 0.5);
+            color: var(--blue-700);
+            font-weight: 500;
+            box-shadow: var(--shadow-md);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+            .edit-btn:hover {
+                border-color: rgba(96, 165, 250, 0.7);
+                box-shadow: var(--shadow-lg);
+                transform: scale(1.1);
+            }
+
+            .edit-btn:active {
+                transform: scale(0.95);
+            }
+
+            .edit-btn svg {
+                width: 1rem;
+                height: 1rem;
+            }
+
+        /* Delete Button - Glassmorphic Coral/Red Outline */
+        .delete-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            background: transparent;
+            border: 2px solid var(--red-400);
+            color: var(--red-600);
+            font-weight: 500;
+            box-shadow: var(--shadow-md);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+            .delete-btn:hover {
+                background-color: var(--red-50);
+                box-shadow: var(--shadow-md);
+                transform: scale(1.1);
+            }
+
+            .delete-btn:active {
+                transform: scale(0.95);
+            }
+
+            .delete-btn svg {
+                width: 1rem;
+                height: 1rem;
+            }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray-600);
+        }
+
+        /* Table Footer */
+        .table-footer {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 1rem;
+        }
+
+        /* Screen Reader Only */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.2s ease;
+        }
+
+            .modal-overlay.active {
+                display: flex;
+            }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-xl);
+            width: 100%;
+            max-width: 28rem;
+            margin: 1rem;
+            animation: slideIn 0.3s ease;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
+
+        .modal-close-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            background: transparent;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            color: var(--gray-600);
+            transition: var(--transition);
+        }
+
+            .modal-close-btn:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+                color: var(--gray-900);
+            }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+            .form-group:last-child {
+                margin-bottom: 0;
+            }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0.5rem;
+            background-color: rgba(0, 0, 0, 0.02);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+            .form-input:hover {
+                border-color: rgba(0, 0, 0, 0.15);
+            }
+
+            .form-input:focus {
+                outline: none;
+                border-color: var(--blue-400);
+                background-color: var(--white);
+                box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+            }
+
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            padding: 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-cancel {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: var(--white);
+            color: var(--gray-600);
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+            .btn-cancel:hover {
+                background-color: rgba(0, 0, 0, 0.02);
+                border-color: rgba(0, 0, 0, 0.15);
+            }
+
+        .btn-submit {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            background: linear-gradient(to right, var(--blue-400), var(--blue-500));
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+            .btn-submit:hover {
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-1px);
+            }
+
+            .btn-submit:active {
+                transform: translateY(0);
+            }
+
+        /* Delete Modal Specific */
+        .delete-modal-body {
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .delete-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: var(--red-50);
+            margin-bottom: 1rem;
+        }
+
+            .delete-icon-wrapper svg {
+                width: 2rem;
+                height: 2rem;
+                color: var(--red-600);
+            }
+
+        .delete-modal-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .delete-modal-text {
+            color: var(--gray-600);
+            font-size: 0.95rem;
+        }
+
+        .btn-delete {
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.5rem;
+            border: none;
+            background: linear-gradient(to right, var(--red-400), var(--red-600));
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+            .btn-delete:hover {
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-1px);
+            }
+
+            .btn-delete:active {
+                transform: translateY(0);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 p-8">
+        <div class="mx-auto max-w-7xl space-y-6">
+            <!-- Header Section -->
+            <div class="flex flex-col gap-2 mb-6">
+                <h1 class="text-4xl font-bold text-gray-900">Department Section</h1>
+                <p class="text-gray-600">Department Related Information</p>
+            </div>
+
+            <!-- Card Container -->
+            <div class="card-container">
+                <!-- Card Header -->
+                <div class="card-header">
+                    <div class="flex items-center justify-between gap-4 flex-wrap">
+                        <!-- Search Bar -->
+                        <div class="search-wrapper">
+                            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            <input id="searchInput"
+                                   type="text"
+                                   class="search-input"
+                                   placeholder="Search by DepartmentName..." />
+                        </div>
+
+                        <!-- Add Member Button -->
+                        <button id="addMemberBtn" class="add-member-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            <span>Add Member</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card Content -->
+                <div class="card-content">
+                    <!-- Table -->
+                    <div class="table-wrapper">
+                        <table class="data-table">
+                            <thead>
+                                <tr class="table-header-row">
+                                    <th>DepartmentName</th>
+                                    <th style="text-align: center;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Table rows will be populated by JavaScript -->
+                            </tbody>
+                        </table>
+
+                        <!-- Empty State -->
+                        <div id="emptyState" class="empty-state" style="display: none;">
+                            <p>No members found matching your search.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Info -->
+                    <div class="table-footer">
+                        Showing <span id="filteredCount">5</span> of <span id="totalCount">5</span> members
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Member Modal -->
+    <div id="addModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Add New Department</h2>
+                <button class="modal-close-btn" onclick="closeAddModal()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="addForm" onsubmit="handleAddSubmit(event)">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label" for="addDepartmentName">Department Name</label>
+                        <input type="text" id="addDepartmentName" class="form-input" placeholder="Enter department name" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" onclick="closeAddModal()">Cancel</button>
+                    <button type="submit" class="btn-submit">Add Department</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Member Modal -->
+    <div id="editModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Edit Department</h2>
+                <button class="modal-close-btn" onclick="closeEditModal()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <form id="editForm" onsubmit="handleEditSubmit(event)">
+                <input type="hidden" id="editId" />
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="form-label" for="editDepartmentName">Department Name</label>
+                        <input type="text" id="editDepartmentName" class="form-input" placeholder="Enter department name" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" onclick="closeEditModal()">Cancel</button>
+                    <button type="submit" class="btn-submit">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Delete Department</h2>
+                <button class="modal-close-btn" onclick="closeDeleteModal()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="delete-modal-body">
+                <div class="delete-icon-wrapper">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        <line x1="10" y1="11" x2="10" y2="17"></line>
+                        <line x1="14" y1="11" x2="14" y2="17"></line>
+                    </svg>
+                </div>
+                <h3 class="delete-modal-title">Are you sure?</h3>
+                <p class="delete-modal-text">This action cannot be undone. This will permanently delete the department "<span id="deleteItemName"></span>".</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-cancel" onclick="closeDeleteModal()">Cancel</button>
+                <button type="button" class="btn-delete" onclick="confirmDelete()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mock Data
+        let mockData = [
+            {
+                id: "1",
+                DepartmentName: "Team Standup"
+            },
+            {
+                id: "2",
+                DepartmentName: "Project Review"
+            },
+            {
+                id: "3",
+                DepartmentName: "Client Meeting"
+            },
+            {
+                id: "4",
+                DepartmentName: "Sprint Planning"
+            },
+            {
+                id: "5",
+                DepartmentName: "Retrospective"
+            },
+        ]
+
+        // Track which item is being deleted
+        let deleteTargetId = null
+
+        // DOM Elements
+        const searchInput = document.getElementById("searchInput")
+        const tableBody = document.getElementById("tableBody")
+        const emptyState = document.getElementById("emptyState")
+        const filteredCountSpan = document.getElementById("filteredCount")
+        const totalCountSpan = document.getElementById("totalCount")
+        const addMemberBtn = document.getElementById("addMemberBtn")
+
+        // Modal Elements
+        const addModal = document.getElementById("addModal")
+        const editModal = document.getElementById("editModal")
+        const deleteModal = document.getElementById("deleteModal")
+
+        // Initialize
+        function init() {
+            totalCountSpan.textContent = mockData.length
+            renderTable(mockData)
+            attachEventListeners()
+        }
+
+        // Attach Event Listeners
+        function attachEventListeners() {
+            searchInput.addEventListener("input", handleSearch)
+            addMemberBtn.addEventListener("click", openAddModal)
+
+            // Close modals when clicking outside
+            addModal.addEventListener("click", function(e) {
+                if (e.target === addModal) closeAddModal()
+            })
+            editModal.addEventListener("click", function(e) {
+                if (e.target === editModal) closeEditModal()
+            })
+            deleteModal.addEventListener("click", function(e) {
+                if (e.target === deleteModal) closeDeleteModal()
+            })
+
+            // Close modals with Escape key
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape") {
+                    closeAddModal()
+                    closeEditModal()
+                    closeDeleteModal()
+                }
+            })
+        }
+
+        // Handle Search
+        function handleSearch(e) {
+            const query = e.target.value.toLowerCase()
+            const filtered = mockData.filter(
+                (member) => member.DepartmentName.toLowerCase().includes(query)
+            )
+            renderTable(filtered)
+        }
+
+        // Render Table
+        function renderTable(members) {
+            tableBody.innerHTML = ""
+
+            if (members.length === 0) {
+                emptyState.style.display = "block"
+                filteredCountSpan.textContent = "0"
+                return
+            }
+
+            emptyState.style.display = "none"
+            filteredCountSpan.textContent = members.length
+
+            members.forEach((member) => {
+                const row = document.createElement("tr")
+                row.innerHTML = `
+                    <td class="font-medium">${escapeHtml(member.DepartmentName)}</td>
+                    <td>
+                        <div class="action-buttons">
+                            <button class="edit-btn" onclick="handleEdit('${member.id}')" title="Edit member">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                                </svg>
+                                <span class="sr-only">Edit</span>
+                            </button>
+                            <button class="delete-btn" onclick="handleDelete('${member.id}')" title="Delete member">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                                </svg>
+                                <span class="sr-only">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                `
+                tableBody.appendChild(row)
+            })
+        }
+
+        // Add Modal Functions
+        function openAddModal() {
+            document.getElementById("addForm").reset()
+            addModal.classList.add("active")
+            document.getElementById("addDepartmentName").focus()
+        }
+
+        function closeAddModal() {
+            addModal.classList.remove("active")
+        }
+
+        function handleAddSubmit(e) {
+            e.preventDefault()
+            const departmentName = document.getElementById("addDepartmentName").value.trim()
+
+            if (departmentName) {
+                const newId = String(Math.max(...mockData.map(m => parseInt(m.id))) + 1)
+                const newMember = {
+                    id: newId,
+                    DepartmentName: departmentName
+                }
+                mockData.push(newMember)
+                totalCountSpan.textContent = mockData.length
+                renderTable(mockData)
+                closeAddModal()
+                console.log("Added new department:", newMember)
+            }
+        }
+
+        // Edit Modal Functions
+        function handleEdit(id) {
+            const member = mockData.find(m => m.id === id)
+            if (member) {
+                document.getElementById("editId").value = member.id
+                document.getElementById("editDepartmentName").value = member.DepartmentName
+                editModal.classList.add("active")
+                document.getElementById("editDepartmentName").focus()
+            }
+        }
+
+        function closeEditModal() {
+            editModal.classList.remove("active")
+        }
+
+        function handleEditSubmit(e) {
+            e.preventDefault()
+            const id = document.getElementById("editId").value
+            const departmentName = document.getElementById("editDepartmentName").value.trim()
+
+            if (departmentName) {
+                const memberIndex = mockData.findIndex(m => m.id === id)
+                if (memberIndex !== -1) {
+                    mockData[memberIndex].DepartmentName = departmentName
+                    renderTable(mockData)
+                    closeEditModal()
+                    console.log("Updated department:", mockData[memberIndex])
+                }
+            }
+        }
+
+        // Delete Modal Functions
+        function handleDelete(id) {
+            const member = mockData.find(m => m.id === id)
+            if (member) {
+                deleteTargetId = id
+                document.getElementById("deleteItemName").textContent = member.DepartmentName
+                deleteModal.classList.add("active")
+            }
+        }
+
+        function closeDeleteModal() {
+            deleteModal.classList.remove("active")
+            deleteTargetId = null
+        }
+
+        function confirmDelete() {
+            if (deleteTargetId) {
+                mockData = mockData.filter(m => m.id !== deleteTargetId)
+                totalCountSpan.textContent = mockData.length
+                renderTable(mockData)
+                closeDeleteModal()
+                console.log("Deleted department with ID:", deleteTargetId)
+            }
+        }
+
+        // Utility: Escape HTML to prevent XSS
+        function escapeHtml(text) {
+            const map = {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#039;",
+            }
+            return text.replace(/[&<>"']/g, (m) => map[m])
+        }
+
+        // Initialize on page load
+        document.addEventListener("DOMContentLoaded", init)
+    </script>
+</body>
+
+</html>
