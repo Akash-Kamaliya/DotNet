@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MOM Login</title>
+    <link href="~/assets/css/auth.css" rel="stylesheet" />
+</head>
+<body class="auth-body">
+
+    <div class="auth-card">
+        <h2>Minutes Of Meeting</h2>
+        <p class="subtitle">Login to your account</p>
+
+        <form method="post">
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="password" name="password" placeholder="Password" required />
+
+            <button type="submit">Login</button>
+
+            <div class="text-danger">@ViewBag.Error</div>
+
+            <p class="switch">
+                Don't have an account?
+                <a href="/Auth/Register">Register</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>

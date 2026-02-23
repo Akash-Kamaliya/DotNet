@@ -1,4 +1,6 @@
-﻿<div class="container pb-3">
+﻿@model MOM_Project.Models.MeetingMemberModel
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Edit Meeting Member</h2>
 </div>
 
@@ -9,55 +11,42 @@
 
     <div class="card-body">
 
-        <form class="needs-validation" novalidate method="post">
+        <form asp-action="MeetingMemberEditForm" method="post">
 
             <div class="row mb-3">
-                <div class="col-md-6">
-                    <label class="form-label">Meeting Member ID</label>
-                    <input type="text" class="form-control is-valid" value="7" readonly>
-                    <div class="valid-feedback">Auto-generated</div>
+                <div class="col-md-12">
+                    <label class="form-label">Meeting Name</label>
+                    <input asp-for="MeetingName" class="form-control" />
+                    <span asp-validation-for="MeetingName" class="text-danger"></span>
                 </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Meeting ID</label>
-                    <input type="text" class="form-control is-invalid" value="5" required>
-                    <div class="invalid-feedback">Meeting ID is required.</div>
-                </div>
-
             </div>
 
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label class="form-label">Staff ID</label>
-                    <input type="text" class="form-control is-invalid" value="3" required>
-                    <div class="invalid-feedback">Staff ID is required.</div>
+                    <label class="form-label">Staff Name</label>
+                    <input asp-for="StaffName" class="form-control" />
+                    <span asp-validation-for="StaffName" class="text-danger"></span>
                 </div>
+
                 <div class="col-md-6">
                     <label class="form-label">Attendance</label>
-                    <select class="form-select is-valid" required>
-                        <option>Present</option>
-                        <option>Absent</option>
+                    <select asp-for="IsPresent" class="form-select">
+                        <option value="">-- Select --</option>
+                        <option value="true">Present</option>
+                        <option value="false">Absent</option>
                     </select>
-                    <div class="valid-feedback">Status selected</div>
+                    <span asp-validation-for="IsPresent" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-12">
                     <label class="form-label">Remarks</label>
-                    <textarea class="form-control is-valid" rows="3" required>Attended full meeting</textarea>
-                    <div class="valid-feedback">Looks good</div>
+                    <textarea asp-for="Remarks" class="form-control"></textarea>
+                    <span asp-validation-for="Remarks" class="text-danger"></span>
                 </div>
             </div>
 
-            <div class="d-flex gap-2">
-                <button type="submit" class="btn btn-primary">
-                    <i class="bi bi-pencil"></i> Update
-                </button>
-                <a asp-action="MeetingMemberList" class="btn btn-secondary">
-                    Cancel
-                </a>
-            </div>
-
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-action="MeetingMemberList" class="btn btn-secondary">Cancel</a>
         </form>
-
     </div>
 </div>

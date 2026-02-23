@@ -5,10 +5,30 @@
         <div class="h5">View Meeting Type</div>
     </div>
     <div class="card-body">
-        <p><b>ID:</b> 1</p>
-        <p><b>Name:</b> Review Meeting</p>
-        <p><b>Remarks:</b> General Discussion</p>
-        <p><b>Created:</b> 09-11-2001</p>
+        <div class="row mb-3">
+            <div class="col-md-3 fw-bold">MeetingType ID</div>
+            <div class="col-md-9">@Model.MeetingTypeID</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-3 fw-bold">MeetingType Name</div>
+            <div class="col-md-9">@Model.MeetingTypeName</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-3 fw-bold">Remarks</div>
+            <div class="col-md-9">@Model.Remarks</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-3 fw-bold">Created</div>
+            <div class="col-md-9">@Model.Created</div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-3 fw-bold">Modified</div>
+            <div class="col-md-9">@Model.Modified</div>
+        </div>
 
         <a asp-action="MeetingTypeList" class="btn btn-primary">Back</a>
     </div>

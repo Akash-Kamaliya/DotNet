@@ -1,4 +1,6 @@
-﻿<h2 class="h2 fw-bold">Schedule Meeting</h2>
+﻿@model MOM_Project.Models.MeetingsModel
+
+<h2 class="h2 fw-bold">Schedule Meeting</h2>
 
 <div class="card shadow rounded-4 overflow-hidden">
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
@@ -6,41 +8,38 @@
     </div>
 
     <div class="card-body">
-        <form>
+        <form asp-action="MeetingsAdd" method="post">
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Meeting Date & Time</label>
-                    <input type="datetime-local" class="form-control" />
+                    <input asp-for="MeetingDate" type="datetime-local" class="form-control" />
+                    <span asp-validation-for="MeetingDate" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Meeting Type ID</label>
-                    <input class="form-control" placeholder="Meeting Type ID" />
+                    <label class="form-label">Meeting Type Name</label>
+                    <input asp-for="MeetingTypeName" class="form-control" />
+                    <span asp-validation-for="MeetingTypeName" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Venue ID</label>
-                    <input class="form-control" placeholder="Venue ID" />
+                    <label class="form-label">Venue Name</label>
+                    <input asp-for="VenueName" class="form-control" />
+                    <span asp-validation-for="VenueName" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Department ID</label>
-                    <input class="form-control" placeholder="Department ID" />
+                    <label class="form-label">Department Name</label>
+                    <input asp-for="DepartmentName" class="form-control" />
+                    <span asp-validation-for="DepartmentName" class="text-danger"></span>
                 </div>
             </div>
 
-            <div class="d-flex gap-2">
-                <button class="btn btn-primary">
-                    <i class="bi bi-save"></i> Save
-                </button>
-                <a asp-action="MeetingsList" class="btn btn-secondary">
-                    Cancel
-                </a>
-            </div>
-
+            <button class="btn btn-primary">Save</button>
+            <a asp-action="MeetingsList" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </div>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MOM_Project.Models;
 
 namespace MOM_Project.Controllers
 {
@@ -13,15 +14,49 @@ namespace MOM_Project.Controllers
         {
             return View();
         }
-        public IActionResult MeetingsView()
+
+        [HttpPost]
+        public IActionResult MeetingsAdd(MeetingsModel model)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return RedirectToAction("MeetingsList");
         }
+
         public IActionResult MeetingsEditForm()
         {
+            var model = new MeetingsModel
+            {
+                MeetingDate = DateTime.Now,
+                MeetingTypeName = "Review Meeting",
+                VenueName = "Conference Room A",
+                DepartmentName = "CSE",
+                MeetingDescription = "Quarterly review discussion"
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult MeetingsEditForm(MeetingsModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return RedirectToAction("MeetingsList");
+        }
+
+        public IActionResult MeetingsDeleteForm()
+        {
             return View();
         }
-        public IActionResult MeetingsDeleteForm()
+
+        public IActionResult MeetingsView()
         {
             return View();
         }

@@ -1,13 +1,4 @@
-﻿@{
-    var venues = new List<string>
-    {
-        "Conference Room A",
-        "Conference Room B",
-        "Seminar Hall",
-        "Board Room",
-        "Online - Google Meet"
-    };
-}
+﻿@model IEnumerable<MOM_Project.Models.MeetingVenueModel>
 
 <div class="container pb-3">
     <h2 class="h2 fw-bold">Meeting Venue</h2>
@@ -17,33 +8,57 @@
         </a>
     </div>
 </div>
-
+@if (@TempData["SucessMessage"] != null)
+{
+    <div class="alert alert-primary" role="alert">
+        @TempData["SucessMessage"]
+    </div>
+}
+@if (@TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <div class="shadow rounded-4 overflow-hidden">
     <div class="bg-primary text-white px-3 py-2 h5 mb-0">
         Meeting Venue List
     </div>
 
-    <table class="table mb-0">
-        <thead>
-            <tr>
-                <th>Venue Name</th>
-                <th class="text-center">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var venue in venues)
-            {
+    @if (Model != null && Model.Any())
+    {
+        <table class="table main-table mb-0">
+            <thead>
                 <tr>
-                    <td>@venue</td>
-                    <td class="text-center">
-                        <div class="action-icons">
-                            <a asp-action="MeetingVenueView"><i class="bi bi-eye"></i></a>
-                            <a asp-action="MeetingVenueEditForm"><i class="bi bi-pen"></i></a>
-                            <a asp-action="MeetingVenueDeleteForm"><i class="bi bi-trash text-danger"></i></a>
-                        </div>
-                    </td>
+                    <th>Department Name</th>
+                    <th class="text-center">Action</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.MeetingVenueName</td>
+                        <td class="text-center">
+                            <div class="action-icons">
+                                <a asp-action="MeetingVenueView" asp-controller="MeetingVenue" asp-route-MeetingVenueID="@item.MeetingVenueID" title="View">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a asp-action="MeetingVenueEditForm" asp-controller="MeetingVenue" asp-route-MeetingVenueID="@item.MeetingVenueID" title="Edit">
+                                    <i class="bi bi-pen"></i>
+                                </a>
+                                <a asp-action="MeetingVenueDeleteForm" asp-controller="MeetingVenue" asp-route-MeetingVenueID="@item.MeetingVenueID" title="Delete">
+                                    <i class="bi bi-trash text-danger"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h5>No Data Found</h5>
+    }
 </div>

@@ -10,7 +10,7 @@ namespace MOM_Project.Controllers
         public IActionResult DashboardView(DashboardModel dm)
         {
             ViewBag.vdm = dm.DemoData;
-            return View();
+            return View();  
         }
 
     }

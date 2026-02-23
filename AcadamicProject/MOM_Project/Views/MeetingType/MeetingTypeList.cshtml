@@ -1,13 +1,4 @@
-﻿@{
-    var meetingTypes = new List<string>
-    {
-        "Review Meeting",
-        "Planning Meeting",
-        "Training Session",
-        "Audit Meeting",
-        "Client Discussion"
-    };
-}
+﻿@model IEnumerable<MOM_Project.Models.MeetingTypeModel>
 
 <div class="container pb-3">
     <h2 class="h2 fw-bold">Meeting Type</h2>
@@ -17,7 +8,18 @@
         </a>
     </div>
 </div>
-
+@if (@TempData["SucessMessage"] != null)
+{
+    <div class="alert alert-primary" role="alert">
+        @TempData["SucessMessage"]
+    </div>
+}
+@if (@TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <div class="shadow rounded-4 overflow-hidden">
     <div class="bg-primary text-white px-3 py-2 h5 mb-0">
         Meeting Type List
@@ -31,18 +33,31 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var type in meetingTypes)
+            @if (Model != null && Model.Any())
             {
-                <tr>
-                    <td>@type</td>
-                    <td class="text-center">
-                        <div class="action-icons">
-                            <a asp-action="MeetingTypeView"><i class="bi bi-eye"></i></a>
-                            <a asp-action="MeetingTypeEditForm"><i class="bi bi-pen"></i></a>
-                            <a asp-action="MeetingTypeDeleteForm"><i class="bi bi-trash text-danger"></i></a>
-                        </div>
-                    </td>
-                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.MeetingTypeName</td>
+                        <td class="text-center">
+                            <div class="action-icons">
+                                <a asp-action="MeetingTypeView" asp-controller="MeetingType" asp-route-MeetingTypeID="@item.MeetingTypeID" title="View">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                                <a asp-action="MeetingTypeEditForm" asp-controller="MeetingType" asp-route-MeetingTypeID="@item.MeetingTypeID" title="Edit">
+                                    <i class="bi bi-pen"></i>
+                                </a>
+                                <a asp-action="MeetingTypeDeleteForm" asp-controller="MeetingType" asp-route-MeetingTypeID="@item.MeetingTypeID" title="Delete">
+                                    <i class="bi bi-trash text-danger"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr colspan="2" class="text-center">NO Meeting Type Found</tr>
             }
         </tbody>
     </table>

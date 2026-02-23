@@ -1,4 +1,6 @@
-﻿<div class="container pb-3">
+﻿@model MOM_Project.Models.MeetingsModel
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold">Edit Meeting</h2>
 </div>
 
@@ -9,59 +11,53 @@
 
     <div class="card-body">
 
-        <form class="needs-validation" novalidate method="post">
+        <form asp-action="MeetingsEditForm" method="post">
 
             <div class="row mb-3">
-                <div class="col-md-4">
-                    <label class="form-label">Meeting ID</label>
-                    <input type="text" class="form-control is-valid" value="5" readonly>
-                    <div class="valid-feedback">Auto-generated</div>
-                </div>
-
-                <div class="col-md-8">
-                    <label class="form-label">Meeting Date & Time</label>
-                    <input type="datetime-local" class="form-control is-invalid" value="2025-12-15T10:30" required>
-                    <div class="invalid-feedback">Meeting date & time is required.</div>
+                <div class="col-md-12">
+                    <label class="form-label">Meeting Name</label>
+                    <input class="form-control" value="Development" readonly>
                 </div>
             </div>
 
             <div class="row mb-3">
-                <div class="col-md-4">
-                    <label class="form-label">Meeting Type ID</label>
-                    <input type="text" class="form-control is-invalid" value="2" required>
-                    <div class="invalid-feedback">Meeting type is required.</div>
+                <div class="col-md-6">
+                    <label class="form-label">Meeting Date & Time</label>
+                    <input asp-for="MeetingDate" type="datetime-local" class="form-control" />
+                    <span asp-validation-for="MeetingDate" class="text-danger"></span>
                 </div>
 
-                <div class="col-md-4">
-                    <label class="form-label">Meeting Venue ID</label>
-                    <input type="text" class="form-control is-invalid" value="3" required>
-                    <div class="invalid-feedback">Meeting venue is required.</div>
+                <div class="col-md-6">
+                    <label class="form-label">Meeting Type Name</label>
+                    <input asp-for="MeetingTypeName" class="form-control" />
+                    <span asp-validation-for="MeetingTypeName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">Venue Name</label>
+                    <input asp-for="VenueName" class="form-control" />
+                    <span asp-validation-for="VenueName" class="text-danger"></span>
                 </div>
 
-                <div class="col-md-4">
-                    <label class="form-label">Department ID</label>
-                    <input type="text" class="form-control is-invalid" value="1" required>
-                    <div class="invalid-feedback">Department is required.</div>
+                <div class="col-md-6">
+                    <label class="form-label">Department Name</label>
+                    <input asp-for="DepartmentName" class="form-control" />
+                    <span asp-validation-for="DepartmentName" class="text-danger"></span>
                 </div>
             </div>
 
             <div class="row mb-4">
                 <div class="col-md-12">
                     <label class="form-label">Meeting Description</label>
-                    <textarea class="form-control is-valid" rows="3" required>Quarterly review discussion</textarea>
-                    <div class="valid-feedback">Looks good</div>
+                    <textarea asp-for="MeetingDescription" class="form-control"></textarea>
+                    <span asp-validation-for="MeetingDescription" class="text-danger"></span>
                 </div>
             </div>
 
-            <div class="d-flex gap-2">
-                <button type="submit" class="btn btn-primary">
-                    <i class="bi bi-pencil"></i> Update
-                </button>
-                <a asp-action="MeetingsList" class="btn btn-secondary">
-                    Cancel
-                </a>
-            </div>
-
+            <button class="btn btn-primary">Update</button>
+            <a asp-action="MeetingsList" class="btn btn-secondary">Cancel</a>
         </form>
 
     </div>

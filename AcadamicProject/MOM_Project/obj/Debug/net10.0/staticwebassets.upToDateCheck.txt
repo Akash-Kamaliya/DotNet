@@ -1,7 +1,9 @@
+wwwroot\assets\css\auth.css
 wwwroot\assets\css\style.css
 wwwroot\assets\img\apple-touch-icon.png
 wwwroot\assets\img\card.jpg
 wwwroot\assets\img\favicon.png
+wwwroot\assets\img\logo.png
 wwwroot\assets\img\messages-1.jpg
 wwwroot\assets\img\messages-2.jpg
 wwwroot\assets\img\messages-3.jpg
@@ -16,7 +18,7 @@ wwwroot\assets\img\product-2.jpg
 wwwroot\assets\img\product-3.jpg
 wwwroot\assets\img\product-4.jpg
 wwwroot\assets\img\product-5.jpg
-wwwroot\assets\img\profile-img.jpg
+wwwroot\assets\img\profile-img2.jpg
 wwwroot\assets\img\slides-1.jpg
 wwwroot\assets\img\slides-2.jpg
 wwwroot\assets\img\slides-3.jpg
@@ -494,9 +496,6 @@ wwwroot\assets\vendor\tinymce\themes\silver\theme.min.js
 wwwroot\assets\vendor\tinymce\tinymce.d.ts
 wwwroot\assets\vendor\tinymce\tinymce.js
 wwwroot\assets\vendor\tinymce\tinymce.min.js
-wwwroot\assets\img\logo.png
-wwwroot\assets\css\Untitled-1.html
-X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\vendor\tinymce\tinymce.min.js
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\vendor\tinymce\tinymce.js
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\vendor\tinymce\themes\silver\theme.min.js
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\vendor\tinymce\themes\silver\theme.js
@@ -867,4 +866,5 @@ X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\scss\Readme.txt
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\js\main.js
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\img\not-found.svg
 X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\css\style.css
-X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\css\Untitled-1.html
+X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\css\auth.css
+X:\Akash\DotNet\AcadamicProject\MOM_Project\wwwroot\assets\vendor\tinymce\tinymce.min.js

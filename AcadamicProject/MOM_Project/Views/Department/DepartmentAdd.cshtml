@@ -10,7 +10,18 @@
     </div>
 
     <div class="card-body">
-
+        @if (@TempData["SucessMessage"] != null)
+        {
+            <div class="alert alert-primary" role="alert">
+                @TempData["SucessMessage"]
+            </div>
+        }
+        @if (@TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["ErrorMessage"]
+            </div>
+        }
         <form asp-action="DepartmentAdd" method="post">
 
             <div class="mb-3">

@@ -1,25 +1,41 @@
-﻿<div class="container pb-3">
+﻿@model DepartmentModel
+
+<div class="container pb-3">
     <h2 class="h2 fw-bold text-danger">Delete Department</h2>
 </div>
-
-<div class="card shadow rounded-4 border-danger overflow-hidden">
-    <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
-        <div class="h5">Delete Department</div>
+@if (@TempData["SucessMessage"] != null)
+{
+    <div class="alert alert-primary" role="alert">
+        @TempData["SucessMessage"]
     </div>
+}
+@if (@TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
+<div class="card shadow rounded-4 border-danger overflow-hidden">
+    <div class="table-head px-3 py-2 bg-danger text-white">
+        <div class="h5">Confirm Delete</div>
+    </div>
+
     <div class="card-body">
 
-
-        <ul class="list-group mb-3 p-1">
-            <li class="list-group-item"><b>ID:</b> 5</li>
-            <li class="list-group-item"><b>Name:</b> IT Department</li>
+        <ul class="list-group mb-3">
+            <li class="list-group-item"><b>ID:</b> @Model.DepartmentID</li>
+            <li class="list-group-item"><b>Name:</b> @Model.DepartmentName</li>
         </ul>
 
-        <div class="d-flex justify-content-start gap-2 p-1">
-            <button class="btn btn-danger">
+        <form asp-action="DepartmentDeleteConfirm" method="post">
+            <input type="hidden" name="DepartmentID" value="@Model.DepartmentID" />
+
+            <button type="submit" class="btn btn-danger">
                 <i class="bi bi-trash"></i> Delete
             </button>
+
             <a asp-action="DepartmentList" class="btn btn-secondary">Cancel</a>
-        </div>
+        </form>
 
     </div>
 </div>

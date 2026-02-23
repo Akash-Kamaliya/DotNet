@@ -3,7 +3,18 @@
 <div class="container pb-3">
     <h2 class="h2 fw-bold">Edit Department</h2>
 </div>
-
+@if (@TempData["SucessMessage"] != null)
+{
+    <div class="alert alert-primary" role="alert">
+        @TempData["SucessMessage"]
+    </div>
+}
+@if (@TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <div class="card shadow rounded-4 overflow-hidden">
     <div class="table-head d-flex align-items-center px-3 py-2 bg-primary text-white">
         <div class="h5 mb-0">Department Edit Form</div>
@@ -13,20 +24,8 @@
 
         <form asp-action="DepartmentEditForm" method="post">
 
+
             <input type="hidden" asp-for="DepartmentID" />
-
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label class="form-label">Department ID</label>
-                    <input asp-for="DepartmentID" class="form-control" readonly />
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Last Modified</label>
-                    <input asp-for="Modified" class="form-control" readonly />
-                </div>
-            </div>
-
             <div class="row mb-4">
                 <div class="col-md-12">
                     <label asp-for="DepartmentName" class="form-label"></label>
@@ -45,6 +44,7 @@
             </div>
 
         </form>
+
     </div>
 </div>
 
