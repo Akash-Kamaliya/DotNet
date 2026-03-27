@@ -1,0 +1,55 @@
+@model List<RoleDto>
+
+@{
+    ViewData["Title"] = "Roles";
+}
+
+<div class="mb-4 d-flex justify-content-between align-items-center">
+    <div>
+        <h1 class="h2 mb-1">Role Management</h1>
+        <p class="text-muted">Define user roles and permissions</p>
+    </div>
+    <a href="@Url.Action("Create")" class="btn btn-primary">
+        <i class="bi bi-plus-lg"></i> New Role
+    </a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        @if (Model?.Count > 0)
+        {
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Role Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var role in Model)
+                        {
+                            <tr>
+                                <td>@role.RoleName</td>
+                                <td>
+                                    <a href="@Url.Action("Edit", new { id = role.RoleID })" class="btn btn-sm btn-warning">
+                                        <i class="bi bi-pencil"></i> Edit
+                                    </a>
+                                    <form method="post" action="@Url.Action("Delete", new { id = role.RoleID })" style="display: inline;">
+                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?');">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p class="text-center text-muted py-3">No roles found</p>
+        }
+    </div>
+</div>

@@ -1,0 +1,84 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="mb-4">
+    <h1 class="h2 mb-1">Dashboard</h1>
+    <p class="text-muted">Welcome to MOM Portal</p>
+</div>
+
+@if (ViewBag.IsAdmin)
+{
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <h6 class="card-title">Total Meetings</h6>
+                    <h2>@ViewBag.TotalMeetings</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success">
+                <div class="card-body">
+                    <h6 class="card-title">Staff Members</h6>
+                    <h2>@ViewBag.StaffCount</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-info">
+                <div class="card-body">
+                    <h6 class="card-title">Departments</h6>
+                    <h2>@ViewBag.DeptCount</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning">
+                <div class="card-body">
+                    <h6 class="card-title">Roles</h6>
+                    <h2>@ViewBag.RolesCount</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title mb-0">Upcoming Meetings</h5>
+    </div>
+    <div class="card-body">
+        @if (ViewBag.UpcomingMeetings != null && ViewBag.UpcomingMeetings.Count > 0)
+        {
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Venue</th>
+                            <th>Department</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var meeting in ViewBag.UpcomingMeetings)
+                        {
+                            <tr>
+                                <td>@meeting.MeetingTitle</td>
+                                <td>@meeting.MeetingDate.ToString("dd MMM yyyy")</td>
+                                <td>@meeting.MeetingVenueName</td>
+                                <td>@meeting.DepartmentName</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p class="text-muted text-center py-3">No upcoming meetings</p>
+        }
+    </div>
+</div>

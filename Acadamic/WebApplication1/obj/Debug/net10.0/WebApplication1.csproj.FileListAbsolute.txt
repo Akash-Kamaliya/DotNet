@@ -1,0 +1,9 @@
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\rpswa.dswa.cache.json
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfoInputs.cache
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.AssemblyInfo.cs
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.csproj.CoreCompileInputs.cache
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.RazorAssemblyInfo.cache
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.RazorAssemblyInfo.cs
+X:\Akash\DotNet\Acadamic\WebApplication1\obj\Debug\net10.0\WebApplication1.sourcelink.json
